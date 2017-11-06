@@ -1,0 +1,8 @@
+{{chorelist}}
+{% if chorelist %}
+  {% for chore in chorelist.chore_set.all%}
+    <p>{{chore}}</p>
+  {% endfor %}
+{% else %}
+  <p>No chores to show</p>
+{% endif %}

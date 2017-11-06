@@ -1,0 +1,7 @@
+{% if chorelists %}
+  {% for chorelist in chorelists %}
+    <p><a href="/chores/{{chorelist.id}}">{{chorelist.name}}</a></p>
+  {% endfor%}
+{% else %}
+  <p>No chorelist available</p>
+{% endif %}
